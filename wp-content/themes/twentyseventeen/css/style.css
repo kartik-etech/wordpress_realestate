@@ -1,0 +1,53 @@
+@media screen and (min-width: 30em) {
+    .site-branding {
+        padding: 0rem;
+    }
+}
+
+.site-branding {
+    background-color: #ffffff;
+}
+
+.navigation-top {
+    background-color: #393939;
+}
+
+@media screen and (min-width: 48em) {
+    .navigation-top {
+        bottom: 5px;
+        font-size: 14px;
+        font-family: "Times New Roman", Times, serif;
+        text-transform: uppercase;
+    }
+    .navigation-top .wrap {
+        padding: 1px 3.4166666666667em;
+    }
+}
+
+.navigation-top .current-menu-item>a, .navigation-top .current_page_item>a {
+    color: #ecc154;
+}
+
+.navigation-top a {
+    color: #fff;
+    padding: 10px 41px 8px 0;
+    font-weight: 100;
+}
+
+.icon-arrow-right {
+    display: none;
+}
+
+.custom-logo-link img {
+    max-height: 110px;
+}
+
+.panel-content .wrap {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.site-content {
+    padding: 0;
+    margin-top: -115px;
+}

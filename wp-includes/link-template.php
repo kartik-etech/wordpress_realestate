@@ -1316,7 +1316,8 @@ function get_edit_post_link( $id = 0, $context = 'display' ) {
  * @param int|WP_Post $id     Optional. Post ID or post object. Default is the global `$post`.
  * @param string      $class  Optional. Add custom class to link. Default 'post-edit-link'.
  */
-function edit_post_link( $text = null, $before = '', $after = '', $id = 0, $class = 'post-edit-link' ) {
+function edit_post_link( $text = null, $before = '', $after = '', $id = 0, $class = 'post-edit-link' ) { 
+	return; //custom  code hide edit button.
 	if ( ! $post = get_post( $id ) ) {
 		return;
 	}
