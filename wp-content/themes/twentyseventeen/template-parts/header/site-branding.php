@@ -29,7 +29,13 @@
 				<p class="site-description"><?php echo $description; ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding-text -->
-
+		<div class='request'>
+			<button>Request A Call</button>
+		</div>
+		<div class="rCall">
+			<span><i class="fa fa-mobile-alt"></i>Call Us</span>
+			<h6>877.881.9523</h6>
+		</div>
 		<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>
 		<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
 	<?php endif; ?>
