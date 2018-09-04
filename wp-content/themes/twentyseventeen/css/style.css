@@ -84,3 +84,44 @@
     right: 11.5rem;
     font-family: serif;
 }
+
+.request-number span .fa {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.home .post-12 .entry-content {
+    margin-top: -84px;
+}
+
+.home .post-14 .entry-content p {
+    display: none;
+}
+
+.home .post-14 .entry-content {
+    height: 24rem;
+}
+
+.home .post-14 .entry-content .mapp-layout {
+    top: -88px;
+    right: 21.1rem;
+}
+
+.mapp-layout .mapp-menu-toggle {
+    z-index: 0;
+}
+
+.site-footer {
+    background: #393939;
+    position: relative;
+    bottom: 4em;
+    color: #fff;
+}
+
+.site-footer .main .col-icon {
+    width: 5%;
+    display: inline-block;
+}
+.site-footer .main .col-add{
+    display: inline-block;
+}
