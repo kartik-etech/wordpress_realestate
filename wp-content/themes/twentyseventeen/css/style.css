@@ -1,4 +1,3 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @media screen and (min-width: 30em) {
     .site-branding {
         padding: 0rem;
@@ -81,7 +80,7 @@
 
 .request-number span {
     position: absolute;
-    top: 40px;
+    top: 35px;
     right: 11.5rem;
     font-family: serif;
 }
