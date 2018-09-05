@@ -29,10 +29,10 @@
 				<p class="site-description"><?php echo $description; ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding-text -->
-		<div class='request'>
+		<div class='request-button'>
 			<button>Request A Call</button>
 		</div>
-		<div class="rCall">
+		<div class="request-number">
 			<span><i class="fa fa-mobile-alt"></i>Call Us</span>
 			<h6>877.881.9523</h6>
 		</div>
