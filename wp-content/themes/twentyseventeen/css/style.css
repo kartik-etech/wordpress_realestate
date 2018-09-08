@@ -116,6 +116,7 @@
     position: relative;
     bottom: 4em;
     color: #fff;
+<<<<<<< HEAD
 }
 
 .site-footer .main .col-icon {
@@ -124,4 +125,6 @@
 }
 .site-footer .main .col-add{
     display: inline-block;
+=======
+>>>>>>> 1f5d3c1846b67075671cb22dd2866bbac9715a0b
 }
