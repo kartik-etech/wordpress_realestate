@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the MapPress Maps for WordPress package.
 msgid ""
 msgstr ""
-"Project-Id-Version: MapPress Maps for WordPress 2.50.7\n"
+"Project-Id-Version: MapPress Maps for WordPress 2.50.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mappress-google-maps-for-wordpress\n"
-"POT-Creation-Date: 2018-08-26 19:18:35+00:00\n"
+"POT-Creation-Date: 2018-09-06 17:36:37+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -191,7 +191,7 @@ msgstr ""
 msgid "Improve this map"
 msgstr ""
 
-#: mappress.php:672
+#: mappress.php:672 mappress.php:690
 msgid "Streets"
 msgstr ""
 
@@ -219,7 +219,7 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: mappress_map.php:92 mappress_settings.php:300
+#: mappress_map.php:92 mappress_settings.php:306
 msgid "MapPress"
 msgstr ""
 
@@ -296,7 +296,7 @@ msgstr ""
 msgid "Default zoom"
 msgstr ""
 
-#: mappress_settings.php:105 mappress_settings.php:244
+#: mappress_settings.php:105 mappress_settings.php:247
 msgid "Open first POI"
 msgstr ""
 
@@ -376,79 +376,79 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: mappress_settings.php:208 mappress_settings.php:249
+#: mappress_settings.php:208 mappress_settings.php:252
 msgid "(list)"
 msgstr ""
 
-#: mappress_settings.php:210
+#: mappress_settings.php:213
 msgid "Country code for searches"
 msgstr ""
 
-#: mappress_settings.php:214
+#: mappress_settings.php:217
 msgid "Prevent other plugins/themes from loading the Google Maps API"
 msgstr ""
 
-#: mappress_settings.php:218 mappress_settings.php:227
+#: mappress_settings.php:221 mappress_settings.php:230
 msgid "Google"
 msgstr ""
 
-#: mappress_settings.php:218
+#: mappress_settings.php:221
 msgid "Inline"
 msgstr ""
 
-#: mappress_settings.php:227
+#: mappress_settings.php:230
 msgid "Leaflet"
 msgstr ""
 
-#: mappress_settings.php:229
+#: mappress_settings.php:232
 msgid "Leaflet is free and requires no API key.  Google requires an API key and has strict usage limits."
 msgstr ""
 
-#: mappress_settings.php:235 mappress_settings.php:238
+#: mappress_settings.php:238 mappress_settings.php:241
 msgid "Output scripts in footer"
 msgstr ""
 
-#: mappress_settings.php:236
+#: mappress_settings.php:239
 msgid "Disabled because Jetpack Infinite Scroll is active"
 msgstr ""
 
-#: mappress_settings.php:239
+#: mappress_settings.php:242
 msgid "disable if maps are output using AJAX"
 msgstr ""
 
-#: mappress_settings.php:251
+#: mappress_settings.php:257
 msgid "Language for map controls"
 msgstr ""
 
-#: mappress_settings.php:255
+#: mappress_settings.php:261
 msgid "Enter token to use Mapbox map tiles"
 msgstr ""
 
-#: mappress_settings.php:262
+#: mappress_settings.php:268
 msgid "Default zoom when displaying a single POI"
 msgstr ""
 
-#: mappress_settings.php:275
+#: mappress_settings.php:281
 msgid "Easy Google Maps"
 msgstr ""
 
-#: mappress_settings.php:283
+#: mappress_settings.php:289
 msgid "Width (px or %)"
 msgstr ""
 
-#: mappress_settings.php:283
+#: mappress_settings.php:289
 msgid "Height (px)"
 msgstr ""
 
-#: mappress_settings.php:283
+#: mappress_settings.php:289
 msgid "Default size"
 msgstr ""
 
-#: mappress_settings.php:307
+#: mappress_settings.php:313
 msgid "Save Changes"
 msgstr ""
 
-#: mappress_settings.php:308
+#: mappress_settings.php:314
 msgid "Reset Defaults"
 msgstr ""
 

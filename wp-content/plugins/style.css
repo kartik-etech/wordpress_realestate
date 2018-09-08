@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@media screen and (min-width: 30em) {
+    .site-branding {
+        padding: 0rem;
+    }
+}
+
+.site-branding {
+    background-color: #ffffff;
+}
+
+.navigation-top {
+    background-color: #393939;
+}
+
+.wrap .entry-header .entry-title {
+    /* display: none; */
+}
+
+@media screen and (min-width: 48em) {
+    .navigation-top {
+        bottom: 5px;
+        font-size: 12px;
+        font-family: 'Roboto Slab', serif;
+        text-transform: uppercase;
+    }
+    .navigation-top .wrap {
+        padding: 1px 1em;
+    }
+    .site-footer .widget-column.footer-widget-1 {
+        float: left;
+        width: 33%;
+    }
+    .site-footer .widget-column.footer-widget-2 {
+        float: left;
+        width: 33%;
+    }
+    .site-footer .widget-column.footer-widget-3 {
+        float: left;
+        width: 33%;
+    }
+    .site-footer h2.widget-title {
+        color: #ecc154;
+        font-family: 'Roboto Slab', serif;
+        font-size: 18px;
+        margin-bottom: 1em;
+        text-transform: unset;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation-top .current-menu-item>a, .navigation-top .current_page_item>a {
+    color: #ecc154;
+}
+
+.navigation-top a {
+    color: #fff;
+    padding: 10px 41px 8px 0;
+    font-weight: 100;
+}
+
+.icon-arrow-right {
+    display: none;
+}
+
+.custom-logo-link img {
+    max-height: 110px;
+}
+
+.panel-content .wrap {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.site-content {
+    padding: 0;
+    margin-top: -5px;
+}
+
+.request-button {
+    float: right;
+    margin-top: -72px;
+}
+
+.request-button button {
+    padding: 7px 11px 7px 12px;
+    border-radius: 6px;
+    background-color: #ecc154;
+    color: #000;
+    font-weight: inherit;
+    font-family: 'Roboto Slab', serif;
+}
+
+.request-number {
+    float: right;
+}
+
+.request-number h6 {
+    position: absolute;
+    top: 34px;
+    right: 11.5rem;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.request-number span {
+    position: absolute;
+    top: 35px;
+    right: 11.5rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.request-number span .fa {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.home .entry-content .slider {
+    margin-top: -84px;
+}
+
+.home .entry-content p.dammyContact {
+    display: none;
+}
+
+.home .entry-content .contactMap .mapp-layout {
+    position: relative;
+    top: -88px;
+    right: 21.1rem;
+    height: 24rem;
+}
+
+.mapp-layout .mapp-menu-toggle {
+    z-index: 0;
+}
+
+/* panel2 */
+
+.home #panel2 {
+    background: #d7d7d7;
+}
+
+.home #panel2 .panel-content .wrap {
+    max-width: 80%;
+    position: relative;
+    top: -52px;
+    margin-bottom: -22px;
+}
+
+.home #panel2 .panel-content .homeVideo {
+    background: #000;
+    border-radius: 9px;
+    width: 644px;
+    height: 362px;
+    overflow: hidden;
+    float: left;
+}
+
+.home #panel2 .panel-content .reviewSlider {
+    float: right;
+    margin-top: -25px;
+}
+
+.reviewSlider .review {
+    text-align: left;
+}
+
+.reviewSlider .review .review-heading {
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: -66px;
+}
+
+.reviewSlider .review .clientName {
+    font-family: 'Roboto Slab', serif;
+    text-align: right;
+    margin-top: -45px;
+}
+
+.reviewSlider .review .fa-quote-left {
+    color: #bfbfbf;
+}
+
+.reviewSlider .review .comment {
+    margin-top: -20px;
+    margin-left: 25px;
+}
+
+.reviewSlider .review .clientLocation {
+    text-align: right;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: -13px;
+}
+
+
+/* end panel2 */
+
+/* footer */
+
+.site-footer {
+    background: #393939;
+    color: #fff;
+    margin-top: -26px;
+}
+
+.site-footer .main .col-icon {
+    position: absolute;
+}
+
+.site-footer .main .col-add {
+    position: relative;
+    left: 30px;
+}
+
+.site-footer .main .row {
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.site-footer .main .row:hover {
+    color: #ecc154;
+}
+
+.site-footer .wrap h1 {
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    margin-right: 100px;
+}
+
+.site-footer .site-info {
+    font-size: 9px;
+    text-align: center;
+    margin-left: 13em;
+    margin-top: -30px;
+}
+
+#menu-social-links-menu-1 {
+    display: none;
+}
+
+.widget-column.footer-widget-3 .tnp-widget-minimal input.tnp-email {
+    padding: 7px 15px;
+    background: #d7d7d7;
+    border-radius: 5px;
+}
+
+.widget-column.footer-widget-3 .tnp-widget-minimal input.tnp-submit {
+    width: 35%;
+    background: #ecc154;
+    color: #000000d9;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.site-footer .menu-social-links-menu-container .menu {
+    display: inline-flex;
+}
+
+.site-footer .widget ul li {
+    border-bottom: none;
+    border-top: none;
+    padding: 0;
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.widget ul li a, .site-footer .widget-area ul li a, .site-footer .widget-area ul li a, .widget a, .site-footer .widget-area a, .site-footer .widget ul li a:hover, .site-info a, .site-info a:hover {
+    box-shadow: none;
+}
+
+.site-footer .widget ul li a, .site-footer .main, .site-info a {
+    color: #acacac
+}
+
+.site-info a:hover {
+    color: #ecc154;
+}
+
+.site-footer .widget ul li a .fa-facebook-f:hover {
+    color: #3B5998;
+}
+
+.site-footer .widget ul li a .fa-google:hover {
+    color: #db3236;
+}
+
+.site-footer .widget ul li a .fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.site-footer .widget ul li a .fa-linkedin-in:hover {
+    color: #0077B5;
+}
+
+/* end footer */
