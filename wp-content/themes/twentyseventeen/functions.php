@@ -584,3 +584,12 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+/* *
+** add new custom css.
+ */
+function roofers_wp_resources(){
+    wp_enqueue_style('my-theme-style', get_stylesheet_uri());
+    wp_enqueue_style('normalize', get_template_directory_uri() . '/css/style.css');
+}
+add_action('wp_enqueue_scripts', 'roofers_wp_resources');

@@ -51,6 +51,7 @@
 		echo get_the_post_thumbnail( get_queried_object_id(), 'twentyseventeen-featured-image' );
 		echo '</div><!-- .single-featured-image-header -->';
 	endif;
+
 	?>
 
 	<div class="site-content-contain">
