@@ -91,7 +91,11 @@ class Mappress_Template extends Mappress_Obj {
 
 	static function print_templates() {
 		// Parse tokens and print
-		foreach(array('map-controls', 'map-popup', 'map-loop', 'map-item', 'mashup-popup', 'mashup-loop', 'mashup-item') as $name) {
+		$names = array('map-controls', 'map-popup', 'map-loop', 'map-item');
+		if (Mappress::$pro)
+			$names = array_merge($names, array('mashup-popup', 'mashup-loop', 'mashup-item'));
+
+		foreach($names as $name) {
 			$template = self::get_template($name);
 			printf("<script type='text/html' id='mapp-tmpl-$name'>%s</script>", $template);
 		}

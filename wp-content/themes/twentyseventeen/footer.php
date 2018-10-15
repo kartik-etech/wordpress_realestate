@@ -18,6 +18,7 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="wrap">
+				<h1>It's Easy To Find US</h1>
 				<?php
 				get_template_part( 'template-parts/footer/footer', 'widgets' );
 
