@@ -17,7 +17,7 @@ body {
 .breadcrumb {
     background: #d7d7d7;
     padding: 5px;
-    padding-left: 17.4em;
+    padding-left: 18.7em;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -41,6 +41,10 @@ body {
     background-color: #ffffff;
 }
 
+.navigation-top {
+    border: none;
+}
+
 .navigation-top, #site-navigation #top-menu {
     background-color: #393939;
 }
@@ -58,6 +62,23 @@ body {
     display: none;
 }
 
+.navigation-top {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+}
+
+.searchHeader {
+    max-width: 610px;
+    float: right;
+    position: absolute;
+    top: 35px;
+    left: 145px;
+}
+
+.searchHeader .rem-simple-search .glyphicon-search {
+    color: #ecc154 !important;
+}
+
 @media screen and (min-width: 48em) {
     .navigation-top {
         bottom: 5px;
@@ -67,6 +88,9 @@ body {
     }
     .navigation-top .wrap {
         padding: 1px 1em;
+    }
+    .site-navigation-fixed.navigation-top {
+        position: unset;
     }
     .site-footer .widget-column.footer-widget-1 {
         float: left;
@@ -81,8 +105,32 @@ body {
         width: 33%;
     }
     #content .wrap {
-        max-width: 80%;
+        max-width: 100%;
     }
+    .page.page-one-column .entry-header {
+        margin-bottom: 2em;
+    }
+}
+
+.navigation-top .current-menu-item>a, .navigation-top .current_page_item>a {
+    color: #ecc154;
+    position: relative;
+    z-index: 0;
+}
+
+.navigation-top .current_page_item>a::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 3px solid #5c5242;
+    transform: translate(-50%);
+}
+
+.navigation-top .current_page_item>a span {
+    background: #393939;
 }
 
 .navigation-top .current-menu-item>a, .navigation-top .current_page_item>a {
@@ -91,8 +139,9 @@ body {
 
 .navigation-top a {
     color: #fff;
-    padding: 5px 35px 8px 0;
+    padding: 10px 15px 10px 15px;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .menu-top-menu-container #top-menu {
@@ -129,12 +178,31 @@ body {
 }
 
 .request-button button {
-    padding: 7px 11px 7px 12px;
+    padding: 7px 30px 7px 30px;
     border-radius: 6px;
     background-color: #ecc154;
     color: #000;
     font-weight: inherit;
     font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+.request-button .socialMedia {
+    position: absolute;
+    left: 20px;
+    top: 42px;
+}
+
+.request-button .socialMedia #menu-social-links-menucustom {
+    display: inline-flex;
+}
+
+.request-button .socialMedia .social-navigation a {
+    background-color: transparent;
+    border-radius: unset;
+    color: black;
+    margin: 0;
+    width: 20px;
 }
 
 .request-number {
@@ -174,7 +242,7 @@ body {
 .home .entry-content .contactMap .mapp-layout {
     position: relative;
     top: -80px;
-    right: 12.5em;
+    right: 6.7em;
     height: 24rem;
     width: 1315px !important;
 }
@@ -281,6 +349,11 @@ body {
     font-weight: 900;
 }
 
+#panel1 .enquiryForm .wpforms-container-full .wpforms-form .wpforms-description, .entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form .wpforms-description {
+    font-size: 14px;
+    color: #2a2a2a;
+}
+
 #panel1 .enquiryForm .wpforms-container-full .wpforms-form .wpforms-field {
     padding: 5px 0;
 }
@@ -301,7 +374,7 @@ body {
     height: 42px;
 }
 
-#panel1 .enquiryForm .wpforms-container-full .wpforms-form textarea.wpforms-field-medium::placeholder, #panel1 .enquiryForm .wpforms-container-full .wpforms-form input.wpforms-field-medium::placeholder, #panel1 .enquiryForm .wpforms-container-full .wpforms-form textarea.wpforms-field-medium, #panel1 .enquiryForm .wpforms-container-full .wpforms-form .wpforms-description {
+#panel1 .enquiryForm .wpforms-container-full .wpforms-form textarea.wpforms-field-medium::placeholder, #panel1 .enquiryForm .wpforms-container-full .wpforms-form input.wpforms-field-medium::placeholder, #panel1 .enquiryForm .wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     color: #9b9b9b;
 }
 
@@ -312,10 +385,12 @@ body {
     font-weight: 600;
     font-size: 18px;
     border-radius: 10px;
+    border: none;
 }
 
 #panel1 .enquiryForm .wpforms-container-full .wpforms-form button[type=submit]:hover {
     background-color: #ecc154;
+    border: none;
 }
 
 #panel1 .enquiryForm .wpforms-container-full {
@@ -334,8 +409,8 @@ body {
     .home #panel2 .panel-content .wrap {
         max-width: 80%;
         position: relative;
-        top: -40px;
-        margin-bottom: -14px;
+        top: -15px;
+        margin-bottom: 4px;
     }
 }
 
@@ -423,9 +498,10 @@ body {
 }
 
 .home #panel3 .clientSlider #wonderplugincarousel-1 .amazingcarousel-image img {
-    width: 160px;
-    height: 150px;
+    /* width: 140px;
+    height: 130px;  */
     margin: 0;
+    margin-left: 27px;
 }
 
 .home #panel3 .clientSlider .agentInformation {
@@ -464,7 +540,7 @@ body {
     text-decoration: underline;
     position: relative;
     bottom: 20px;
-    right: 60px;
+    float: left;
     font-style: normal;
 }
 
@@ -484,38 +560,50 @@ body {
 
 /* start about us */
 
-.entry-content .aboutPage {
+.aboutPage .aboutUs {
+    border-left: 1px solid #ecc154;
+    width: 80%;
     position: relative;
-    bottom: 80px;
+    left: 125px;
+    bottom: 48px;
+}
+
+.aboutPage .aboutUs .title {
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    top: 130px;
     left: 30px;
 }
 
-.aboutPage .aboutUs {
-    border-left: 1px solid #ecc154;
-}
-
 .aboutPage .aboutUs .title h2 {
-    font-size: 3em;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
+    font-size: 2.9em;
     color: #ecc154;
     font-weight: 900;
-    position: relative;
-    top: 130px;
-    right: 35px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
 }
 
 .aboutPage .content {
     font-size: 16px;
     font-weight: 400;
     top: 27px;
-    color: #828282cc;
+    color: #767676;
 }
 
 .aboutPage .agent {
     position: relative;
     top: 60px;
+}
+
+.aboutPage .agent h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Roboto Slab', serif;
+    color: #ecc154;
+    font-weight: 900;
+    margin-bottom: -45px;
 }
 
 .aboutPage .agent .amazingcarousel-image {
@@ -524,7 +612,10 @@ body {
 }
 
 .aboutPage .agent .amazingcarousel-image-fix-wrapper {
-    margin-left: -18px;
+    margin-top: 50px;
+    width: 70% !important;
+    height: 70% !important;
+    overflow: visible !important;
 }
 
 .aboutPage .agent .agentInformation {
@@ -535,6 +626,7 @@ body {
 .aboutPage .agent .agentInformation .agentName {
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
+    font-size: 19px;
 }
 
 .aboutPage .agent .agentInformation .agentdesignation {
@@ -543,22 +635,30 @@ body {
     color: #9d9d9d;
     font-weight: 600;
     font-style: italic;
+    font-size: 15px;
 }
 
 .aboutPage .agent .agentInformation .agentAbout {
-    color: #9d9d9d;
-    font-size: 16px;
+    color: #707070;
+    font-size: 14px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
+    width: 90%;
 }
 
 .aboutPage .agent .agentInformation .agentContact {
     margin-top: -12px;
     font-weight: 600;
+    font-size: 16px;
+}
+
+.aboutPage .agent .agentInformation .agentContact .contact2 {
+    position: relative;
+    bottom: 7px;
 }
 
 .aboutPage .agent cite {
-    color: #9D9D9D;
+    color: #797c94;
     font-weight: 600;
     text-decoration: underline;
     position: relative;
@@ -573,15 +673,15 @@ body {
 
 .aboutPage .getTouch {
     background: #d7d7d7;
-    width: 145%;
-    margin-left: -14.6rem;
     padding: 20px 13rem 40px 12.5rem;
     position: relative;
-    top: 180px;
+    top: 122px;
+    width: 118%;
+    left: -100px;
 }
 
 .aboutPage .getTouch .wpforms-form {
-    height: 17rem;
+    height: 15rem;
 }
 
 .aboutPage .getTouch .wpforms-title {
@@ -614,14 +714,12 @@ body {
     height: 99px;
     border-radius: 10px;
     padding: 18px;
-    font-weight: 600;
 }
 
 .aboutPage .getTouch .wpforms-container-full .wpforms-form input {
     border-radius: 10px;
     color: #989898;
     padding: 18px;
-    font-weight: 600;
     height: 45px;
 }
 
@@ -640,48 +738,50 @@ body {
     border-radius: 10px;
     background: #ecc154;
     color: #393939;
+    border: none;
 }
 
 .aboutPage .getTouch .wpforms-container-full .wpforms-form textarea.wpforms-field-medium::placeholder, .aboutPage .getTouch .wpforms-container-full .wpforms-form input.wpforms-field-medium::placeholder, .aboutPage .getTouch .wpforms-container-full .wpforms-form textarea.wpforms-field-medium, .aboutPage .getTouch .wpforms-container-full .wpforms-form .wpforms-description {
     color: #9d9d9d;
-    font-weight: 600;
 }
 
 .aboutPage .getTouch .wpforms-container-full .wpforms-form button[type=submit]:hover {
     background-color: #ecc154;
+    border: none;
 }
 
 /* end about us */
 
 /* start contact page */
 
-.entry-content .contactPage {
-    position: relative;
-    bottom: 50px;
-    margin-left: 27px;
+@media screen and (min-width: 48em) {
+    .entry-content .contactPage {
+        width: 80%;
+    }
 }
 
-.entry-content .contactPage .contactUs .heading {
+.entry-content .pageHeading .heading, .pageHeadingTag .tagHeading {
     font-family: 'Roboto Slab', serif;
     font-size: 34px;
     color: #ecc154;
     font-weight: 900;
     text-align: center;
+    text-transform: uppercase;
 }
 
-.entry-content .contactPage .contactUs .info {
+.entry-content .contactPage .pageHeading .info {
     color: #262c60;
     font-size: 28px;
     font-weight: 500;
     text-align: center;
 }
 
-.entry-content .contactPage .contactUs .info .email {
+.entry-content .contactPage .pageHeading .info .email {
     margin-left: -10px;
     text-align: left;
 }
 
-.entry-content .contactPage .contactUs .info i {
+.entry-content .contactPage .pageHeading .info i {
     margin-right: 10px;
 }
 
@@ -694,16 +794,22 @@ body {
     width: 100%;
 }
 
+.entry-content .contactPage .contact_page .contactAddress .contactNumber {
+    transform: translateY(5px);
+}
+
 .entry-content .contactPage .contact_page .contactAddress p {
     margin: 0 0 0.5em;
-    color: #9f9f9f;
+    color: #9E9E9E;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .entry-content .contactPage .contact_page .contactAddress h3 {
     font-size: 18px;
     font-weight: 500;
     font-family: 'Roboto Slab', serif;
-    margin-bottom: 3px;
+    margin-bottom: 0;
 }
 
 .entry-content .contactPage .contact_page .contactAddress .directions {
@@ -713,9 +819,8 @@ body {
 
 .entry-content .contactPage .contactMap .mapp-layout {
     position: relative;
-    height: 24rem;
-    right: 13.2em;
-    top: 15px;
+    height: 26rem;
+    right: 20%;
 }
 
 .entry-content .contactPage .contactForm {
@@ -724,6 +829,7 @@ body {
     width: 100%;
     border-radius: 10px;
     padding: 20px;
+    padding-top: 35px;
     margin-bottom: 5em;
 }
 
@@ -734,6 +840,8 @@ body {
 .entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     height: 110px;
     border-radius: 10px;
+    color: #9b9b9b;
+    padding: 10px 15px 10px 15px;
 }
 
 .entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form input.wpforms-field-medium {
@@ -743,11 +851,11 @@ body {
 .entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form input {
     border-radius: 10px;
     color: #9b9b9b;
-    padding: 6px 15px;
+    padding: 10px 15px 10px 15px;
     height: 42px;
 }
 
-.entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form textarea.wpforms-field-medium::placeholder, .entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form input.wpforms-field-medium::placeholder, .contactPage .entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form textarea.wpforms-field-medium, .entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form .wpforms-description {
+.entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form textarea.wpforms-field-medium::placeholder, .entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form input.wpforms-field-medium::placeholder, .contactPage .entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     color: #9b9b9b;
 }
 
@@ -758,13 +866,294 @@ body {
     font-weight: 600;
     font-size: 18px;
     border-radius: 10px;
+    border: none;
 }
 
 .entry-content .contactPage .contactForm .wpforms-container-full .wpforms-form button[type=submit]:hover {
     background-color: #ecc154;
+    border: none;
 }
 
 /* end contact page */
+
+/* start Set up consultation */
+
+.entry-content .setUpConsultation .pageHeading .info .email {
+    margin-left: 0;
+    text-align: unset;
+}
+
+.entry-content .setUpConsultation .setUp {
+    position: relative;
+    top: 40px;
+    margin-bottom: 60px;
+}
+
+.entry-content .setUpConsultation .setUp .wpforms-description {
+    text-align: center;
+    font-size: 18px;
+    color: #2a2a2a;
+}
+
+.entry-content .setUpConsultation .setUp .wpforms-container-full .wpforms-form input.wpforms-field-medium, div.wpforms-container-full .wpforms-form select.wpforms-field-medium, div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+    max-width: 100%;
+}
+
+.entry-content .setUpConsultation .setUp .wpforms-field-container .wpforms-field-label {
+    color: #333;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.entry-content .setUpConsultation .setUp .wpforms-container-full .wpforms-form button[type=submit] {
+    width: 100%;
+    background-color: #ecc154;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+}
+
+.entry-content .setUpConsultation .setUp .wpforms-container-full .wpforms-form input, .entry-content .setUpConsultation .setUp .wpforms-container-full .wpforms-field-medium {
+    border-radius: 10px;
+    color: #9b9b9b;
+    padding: 10px 15px 10px 15px;
+    height: 42px;
+}
+
+.entry-content .setUpConsultation .setUp .wpforms-container-full .wpforms-field-row {
+    padding: 0;
+}
+
+.entry-content .setUpConsultation .setUp .wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+    height: 120px;
+    border-radius: 10px;
+    color: #9b9b9b;
+    padding: 10px 15px 10px 15px;
+}
+
+.entry-content .setUpConsultation .setUp .wpforms-container-full .wpforms-form textarea.wpforms-field-medium::placeholder, .entry-content .setUpConsultation .setUp .wpforms-container-full .wpforms-form input.wpforms-field-medium::placeholder, .entry-content .setUpConsultation .setUp .wpforms-container-full .wpforms-form textarea.wpforms-field-medium, .entry-content .setUpConsultation .setUp .wpforms-field-name-first::placeholder, .entry-content .setUpConsultation .setUp .wpforms-field-name-last::placeholder {
+    color: #9d9d9d;
+}
+
+/* end Set up consultation */
+
+/* star property search */
+
+.hover-effect .cover {
+    background-color: rgba(236, 193, 84, 0.3) !important;
+}
+
+.landz-box-property.box-grid.mini .price {
+    background-color: #d7d7d7 !important;
+    color: #333 !important;
+    font-weight: 500;
+}
+
+.entry-content a {
+    box-shadow: none !important;
+}
+
+.landz-box-property .footer a {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 4px 12px !important;
+    bottom: 5px !important;
+    font-family: 'Roboto Slab', serif;
+}
+
+.ich-settings-main-wrap .landz-box-property .title {
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.ich-settings-main-wrap .pagination>li {
+    font-size: 15px;
+}
+
+.entry-content a:hover {
+    color: transparent;
+    box-shadow: none;
+}
+
+.search .ich-settings-main-wrap #rem-search-box .search-container .search-options.sample-page {
+    border-radius: 10px;
+    border: none;
+}
+
+.search .ich-settings-main-wrap #rem-search-box .search-container .search-options .searcher {
+    border-radius: 10px;
+    background-color: #d7d7d7;
+}
+
+.search .ich-settings-main-wrap .form-control {
+    color: #9b9b9b !important;
+    padding: 10px 15px 10px 15px !important;
+    height: 42px !important;
+    font-size: 16px !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search #rem-search-box .search-container .search-options .searcher .dropdown {
+    padding: 5px 5px 5px 3px;
+    height: 42px;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.search .ich-settings-main-wrap .dropdown .selected, .search .ich-settings-main-wrap .dropdown li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+
+.search .ich-settings-main-wrap .dropdown .carat {
+    height: 43px !important;
+}
+
+.ich-settings-main-wrap .dropdown.open .carat {
+    border-left: 1px solid #ecc154 !important;
+}
+
+.ich-settings-main-wrap .dropdown.open .carat:after {
+    border-top-color: #FFF !important;
+}
+
+.ich-settings-main-wrap .dropdown .carat:after {
+    border-top: 6px solid #ecc154 !important;
+}
+
+.search #rem-search-box .search-container .search-options .searcher .footer {
+    background-color: rgb(215, 215, 215) !important;
+    border-radius: 10px;
+}
+
+.search .ich-settings-main-wrap button {
+    text-transform: uppercase !important;
+}
+
+.search .ich-settings-main-wrap .btn-default, .search .ich-settings-main-wrap .btn {
+    padding: 9px 12px !important;
+}
+
+.search .ich-settings-main-wrap .btn {
+    font-size: 16px !important;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500 !important;
+    border-radius: 10px !important;
+}
+
+.ich-settings-main-wrap .btn-default:active, .ich-settings-main-wrap .btn-default:focus {
+    background-color: #ecc154 !important;
+    border-color: transparent !important;
+}
+
+.ich-settings-main-wrap .btn:focus, .ich-settings-main-wrap .btn:active:focus {
+    outline: none !important;
+}
+
+.search .noUi-target {
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.search .noUi-horizontal .noUi-handle {
+    background-color: #ecc154;
+}
+
+#rem-search-box .search-container .search-options .searcher .search-button {
+    float: none !important;
+}
+
+/* end property search */
+
+/* star commercial property and resdential */
+
+.rem-topbar form {
+    width: 100%;
+}
+
+.rem-topbar form .btn-group a {
+    margin-right: 8px;
+}
+
+.ich-settings-main-wrap .landz-box-property .price {
+    color: #333;
+}
+
+.landz-box-property .fa {
+    color: #acacac;
+}
+
+.ich-settings-main-wrap .landz-box-property .price:after {
+    border-bottom: 10px solid #d7d7d7 !important;
+}
+
+.ich-settings-main-wrap *, .large-price {
+    color: #333;
+}
+
+.ich-settings-main-wrap .row {
+    margin-bottom: 15px;
+}
+
+.landz-box-property .price {
+    font-weight: 500;
+}
+
+.fa-map-marker:before {
+    content: "\f3c5" !important;
+}
+
+.ich-settings-main-wrap .pagination>li>a {
+    color: #acacac !important;
+}
+
+.ich-settings-main-wrap .pagination>li>a:hover {
+    color: #333 !important;
+}
+
+.prev.page-numbers, .next.page-numbers {
+    font-size: 15px;
+}
+
+.ich-settings-main-wrap .pagination {
+    border: none;
+}
+
+.ich-settings-main-wrap .btn-default.active {
+    background-color: #ecc154;
+}
+
+.ich-settings-main-wrap .glyphicon {
+    color: #333 !important;
+}
+
+/* end commercial property and resdential */
+
+/* start join page */
+
+#post-393 .entry-content {
+    width: 80%;
+}
+
+.entry-content .setUpConsultation .joinFrom {
+    top: 0px;
+    margin-bottom: 0px;
+}
+
+div.wpforms-container-full .wpforms-form ul.wpforms-image-choices-modern .wpforms-image-choices-image:after {
+    background: #ecc154;
+}
+
+/* end join page */
 
 /* star footer */
 
@@ -867,20 +1256,24 @@ body {
     color: #ecc154;
 }
 
-.site-footer .widget ul li a .fa-facebook-f:hover {
+.site-footer .widget ul li a .fa-facebook-f:hover, .request-button .socialMedia ul li a .fa-facebook-f {
     color: #3B5998;
 }
 
-.site-footer .widget ul li a .fa-google:hover {
+.site-footer .widget ul li a .fa-google:hover, .request-button .socialMedia ul li a .fa-google {
     color: #db3236;
 }
 
-.site-footer .widget ul li a .fa-twitter:hover {
+.site-footer .widget ul li a .fa-twitter:hover, .request-button .socialMedia ul li a .fa-twitter {
     color: #1DA1F2;
 }
 
-.site-footer .widget ul li a .fa-linkedin-in:hover {
+.site-footer .widget ul li a .fa-linkedin-in:hover, .request-button .socialMedia ul li a .fa-linkedin-in {
     color: #0077B5;
+}
+
+.site-footer #menu-social-links-menucustom-1 {
+    display: none;
 }
 
 /* end footer */
@@ -890,8 +1283,8 @@ body {
 @media(max-width: 768px) {
     .contactPage .contactMap .mapp-layout {
         width: 770px !important;
-        right: 10em !important;
-        top: 25px !important;
+        right: 8.5em !important;
+        top: 0px !important;
     }
 }
 
@@ -935,34 +1328,36 @@ body {
     /* panel4 home map */
     .home .entry-content .contactMap .mapp-layout {
         width: 710px !important;
-        right: 2.5em;
+        right: 7.4em;
     }
     /* about page */
     .aboutPage .aboutUs {
         border: none;
     }
-    .aboutPage .aboutUs .title h2 {
+    .aboutPage .aboutUs .title {
         top: 60px;
-        border-bottom: 1px solid;
+        left: 0px;
     }
     .aboutPage .getTouch {
-        top: 100px;
+        width: 140% !important;
+        left: -100px !important;
+        top: 38px !important;
     }
     /* contact us  page */
-    .entry-content .contactPage .contactUs .info {
+    .entry-content .contactPage .pageHeading .info {
         font-size: 21px;
     }
     .entry-content .contactPage {
         bottom: 0;
     }
-    .entry-content .contactPage .contactUs .info .email {
+    .entry-content .contactPage .pageHeading .info .email {
         margin-left: 0px;
         text-align: unset;
     }
     .contactPage .contactMap .mapp-layout {
         width: 768px !important;
-        right: 6.4rem !important;
-        top: -25px !important;
+        right: 8.4rem !important;
+        top: -19px !important;
     }
     /* footer */
     .site-footer .wrap h1 {
@@ -1005,12 +1400,13 @@ body {
 
 @media(max-width: 768px) {
     .navigation-top a {
-        padding: 5px 8px 5px 0px;
+        padding: 4px 5px 4px 5px;
+        font-size: 12px;
     }
     .breadcrumb {
         padding-left: 2em;
     }
-    .entry-content .contactPage .contactUs .info {
+    .entry-content .contactPage .pageHeading .info {
         font-size: 21px;
     }
     /* panel1 */
@@ -1036,21 +1432,28 @@ body {
     /* panel4 home map */
     .home .entry-content .contactMap .mapp-layout {
         width: 770px !important;
-        right: 9.1em;
+        right: 4.3em;
     }
     /* about us */
+    .aboutPage .aboutUs {
+        width: 100%;
+        left: 0;
+    }
     .aboutPage .aboutUs .title h2 {
         right: 0;
+    }
+    .aboutPage .agent {
+        top: 0;
     }
     .aboutPage .getTouch {
         background: #d7d7d7;
         text-align: center;
-        width: 110%;
+        width: 116%;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
         padding: 20px;
         margin-left: 0;
-        top: 116px;
+        top: 51px;
         left: -50px;
     }
     .aboutPage .getTouch .wpforms-form {
@@ -1085,6 +1488,11 @@ body {
         padding: 6px 15px;
         height: 42px;
     }
+    .aboutPage .getTouch .wpforms-submit-container {
+        width: 100%;
+        float: none;
+        bottom: 0;
+    }
     .aboutPage .getTouch .wpforms-container-full .wpforms-form button[type=submit] {
         width: 100%;
         border-radius: 10px;
@@ -1111,6 +1519,9 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
     .home .entry-content .slider {
         margin-top: 0px;
+    }
+    .request-button .socialMedia {
+        top: 27px;
     }
     #panel1 .mainProperty {
         bottom: 0;
@@ -1176,37 +1587,42 @@ body {
     /* panel 4 map home page */
     .home .entry-content .contactMap .mapp-layout {
         width: 425px !important;
-        right: 3.1rem;
-        top: -5px;
-        height: 29rem;
+        right: 3.4em !important;
+        top: -12px !important;
+        height: 438px !important;
     }
     /* about us */
     .aboutPage .getTouch {
-        top: 90px;
+        top: 19px;
+        width: 118%;
+        left: -30px;
+    }
+    .aboutPage .aboutUs .title {
+        top: 60px;
+        left: 0px;
     }
     /* contact page */
-    .entry-content .contactPage {
-        bottom: 0;
+    .entry-content .contactPage .pageHeading .info .email {
         margin-left: 0;
     }
-    .entry-content .contactPage .contactUs .info .email {
-        margin-left: 0;
-    }
-    .entry-content .contactPage .contactUs .info {
+    .entry-content .contactPage .pageHeading .info {
         text-align: left;
     }
     /* about page */
     .aboutPage .aboutUs {
         border: none;
     }
-    .aboutPage .aboutUs .title h2 {
-        top: 60px;
-        border-bottom: 1px solid;
+    /*setUpConsultation  */
+    .entry-content .setUpConsultation .pageHeading .info {
+        text-align: center;
+    }
+    .entry-content .setUpConsultation .setUp {
+        top: 15px;
     }
     /* map */
     .contactPage .contactMap .mapp-layout {
         width: 425px !important;
-        right: 2.4em !important;
+        right: 3.4em !important;
         top: -12px !important;
         height: 438px !important;
     }
@@ -1225,6 +1641,27 @@ body {
     }
     .site-footer .site-info {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .request-number span {
+        position: relative;
+        top: -80px;
+        left: 0px;
+    }
+    .request-number {
+        position: relative;
+        left: -18px;
+        bottom: 118px;
+    }
+    .request-number h6 {
+        right: -17px;
+        top: -85px;
+    }
+    .contactPage .contactMap .mapp-layout {
+        width: 320px !important;
+        right: 3.4em !important;
     }
 }
 

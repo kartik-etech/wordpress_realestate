@@ -29,9 +29,26 @@
 				<p class="site-description"><?php echo $description; ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding-text -->
-		<!-- add new code  to request call-->
+	<!-- add custom code -->
+	    <div class="searchHeader">
+			<?php
+				echo do_shortcode('[rem_simple_search placeholder="Search Property Type" width="510px" results_page="' . home_url() . '/index.php/property-search/"]');
+
+			?>
+		</div>
 		<div class='request-button'>
-			<button>Request A Call</button>
+			<a href="<?php echo home_url();?>/index.php/join-us"><button>JOIN US</button></a>
+			<div class="socialMedia">
+			<nav class="social-navigation" role="navigation" >
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'social',
+								'menu_class'     => 'social-links-menu',
+								'depth'          => 1,
+							) );
+						?>
+					</nav>
+			</div>
 		</div>
 		<div class="request-number">
 			<span><i class="fa fa-mobile-alt"></i>Call Us</span>
