@@ -613,7 +613,7 @@ require get_parent_theme_file_path('/inc/icon-functions.php');
 /* *
  ** add new custom css.
  */
-function roofers_wp_resources()
+function etech_wp_resources()
 {
     wp_enqueue_style('my-theme-style', get_stylesheet_uri());
     wp_enqueue_style('normalize', get_template_directory_uri() . '/css/style.css',array(), filemtime( get_stylesheet_directory() . '/css/style.css' ));

@@ -29,6 +29,7 @@
 				<p class="site-description"><?php echo $description; ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding-text -->
+		<!-- add new code  to request call-->
 		<div class='request-button'>
 			<button>Request A Call</button>
 		</div>
