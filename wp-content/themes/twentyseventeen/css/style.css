@@ -9,22 +9,39 @@
 .site-branding-text {
     display: none;
 }
+.home #breadcrumb{
+    display: none;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
-.breadcrumb {
+#breadcrumb{
+    position: unset;
     background: #d7d7d7;
-    padding: 5px;
-    padding-left: 18.7em;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0;
-    border-radius: 0;
+}
+#breadcrumb .wrap{
+
+    max-width: 1180px;
+    padding: 1px 2px;
+
 }
 
+#breadcrumb #site-navigation .breadcrumb {
+    padding: 5px;
+    font-size: 12px;
+    padding-left: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3.5em;
+}
+#breadcrumb #site-navigation .breadcrumb a{
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #222;
+}
 .breadcrumb a {
     font-weight: 400;
 }
@@ -87,7 +104,8 @@ body {
         text-transform: uppercase;
     }
     .navigation-top .wrap {
-        padding: 1px 1em;
+        max-width: 1180px;
+        padding: 1px 2px;
     }
     .site-navigation-fixed.navigation-top {
         position: unset;
@@ -109,6 +127,21 @@ body {
     }
     .page.page-one-column .entry-header {
         margin-bottom: 2em;
+    }
+    #menu-item-805 .sub-menu{
+        background: #393939;
+        text-align: center;
+    }
+    .main-navigation li li:hover, .main-navigation li li.focus {
+        background: transparent;
+    }
+    .main-navigation li li.focus > a, .main-navigation li li:focus > a, .main-navigation li li:hover > a, .main-navigation li li a:hover, .main-navigation li li a:focus, .main-navigation li li.current_page_item a:hover, .main-navigation li li.current-menu-item a:hover, .main-navigation li li.current_page_item a:focus, .main-navigation li li.current-menu-item a:focus{
+        color: #ecc154;
+    }
+    .site-branding .wrap {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1090px;
     }
 }
 
@@ -212,15 +245,18 @@ body {
 .request-number h6 {
     position: absolute;
     top: 34px;
-    right: 11.5rem;
+    right: 8.5rem;
     font-family: 'Roboto Slab', serif;
     font-size: 18px;
+}
+.fa-facebook-f:before {
+    content: "\f39e";
 }
 
 .request-number span {
     position: absolute;
     top: 35px;
-    right: 11.5rem;
+    right: 8.5rem;
     font-family: 'Roboto Slab', serif;
     color: #9b9b9b;
 }
@@ -229,22 +265,35 @@ body {
     margin: 5px;
     font-size: 18px;
     color: #000;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    
 }
 
 .home .entry-content .slider {
     margin-top: -84px;
 }
 
+.home .entry-content .slider div#n2-ss-4 .n2-ss-layers-container, .home .entry-content .slider div#n2-ss-5 .n2-ss-layers-container{
+    margin: 0 !important;
+}
+
 .home .entry-content p.dammyContact {
     display: none;
 }
-
+@media screen and (min-width: 48em){
+    #panel4 .wrap {
+        max-width: 100%;
+        padding: 0;
+    }
+}
 .home .entry-content .contactMap .mapp-layout {
-    position: relative;
-    top: -80px;
-    right: 6.7em;
-    height: 24rem;
-    width: 1315px !important;
+ position: relative;
+ height: 26rem;
+ width: 100% !important;
+ margin: 0;
+ padding: 0;
+ bottom: 58px;
 }
 
 .mapp-layout .mapp-menu-toggle {
@@ -255,7 +304,8 @@ body {
 
 @media screen and (min-width: 30em) {
     #panel1 .panel-content .wrap {
-        max-width: 80%;
+        max-width: 1180px;
+        padding: 0px 40px 0 0;
     }
 }
 
@@ -264,16 +314,20 @@ body {
 }
 
 #panel1 .mainProperty {
-    width: 55%;
+    width: 58%;
     float: left;
     position: relative;
     bottom: 125px;
     left: 65px;
 }
+#panel1 .mainProperty .residentialProperty, #panel1 .mainProperty .commercialProperty{
+    width: 85%;
+    text-align: justify;
+}
 
 #panel1 .mainProperty .buttonProperty {
     background: white;
-    padding: 20px 0 0px 40px;
+    padding: 20px 0 0px 30px;
 }
 
 #panel1 .mainProperty .heading {
@@ -302,6 +356,7 @@ body {
     color: #bcbcbc;
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
+    padding: 1em 2.7em 1em 23px;
 }
 
 #panel1 .buttonProperty button:hover {
@@ -312,9 +367,6 @@ body {
     outline: none;
 }
 
-#panel1 .buttonProperty button {
-    padding: 1em .5em;
-}
 
 .buttonProperty span.dot {
     height: 40px;
@@ -407,22 +459,24 @@ body {
 
 @media screen and (min-width: 30em) {
     .home #panel2 .panel-content .wrap {
-        max-width: 80%;
-        position: relative;
-        top: -15px;
-        margin-bottom: 4px;
-    }
+     max-width: 1180px;
+     position: relative;
+     top: -15px;
+     margin-bottom: 4px;
+ }
 }
 
 .home #panel2 .panel-content .homeVideo {
     background: #000;
     border-radius: 9px;
-    width: 60%;
+    width: 65%;
     height: 362px;
     overflow: hidden;
     float: left;
 }
-
+.home #panel2 .panel-content .homeVideo  iframe{
+    width:710px;
+}
 .home #panel2 .panel-content .reviewSlider {
     float: left;
     margin-top: -20px;
@@ -469,7 +523,7 @@ body {
 
 @media screen and (min-width: 30em) {
     .home #panel3 .panel-content .wrap {
-        max-width: 80%;
+        max-width: 1180px;
         margin-bottom: 90px;
         margin-top: -25px;
     }
@@ -561,19 +615,17 @@ body {
 /* start about us */
 
 .aboutPage .aboutUs {
-    border-left: 1px solid #ecc154;
-    width: 80%;
-    position: relative;
-    left: 125px;
-    bottom: 48px;
+  border-left: 1.4px solid #ecc154;
+  position: relative;
+  bottom: 48px;
 }
 
 .aboutPage .aboutUs .title {
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
     position: relative;
-    top: 130px;
-    left: 30px;
+    left: 15px;
+        padding-top: 2em;
 }
 
 .aboutPage .aboutUs .title h2 {
@@ -588,13 +640,15 @@ body {
 .aboutPage .content {
     font-size: 16px;
     font-weight: 400;
-    top: 27px;
+ padding-top: 2em;
+     padding-bottom: 3em;
     color: #767676;
 }
 
 .aboutPage .agent {
     position: relative;
     top: 60px;
+        padding: 0 3em;
 }
 
 .aboutPage .agent h2 {
@@ -605,7 +659,9 @@ body {
     font-weight: 900;
     margin-bottom: -45px;
 }
-
+.aboutPage .agent .amazingcarousel-text{
+    height: 18.5em;
+}
 .aboutPage .agent .amazingcarousel-image {
     height: 210px !important;
     padding: 10px;
@@ -617,10 +673,30 @@ body {
     height: 70% !important;
     overflow: visible !important;
 }
+.aboutPage .agent .card-group{
+        margin-top: 6em;
+}
+.aboutPage .agent .card-footer{
+        padding: 0;
+    background-color: transparent;
+    border-top: 0;
+}
+.aboutPage .agent .card-footer .text-muted {
+    color: #797c94 !important;
+    font-weight: 600;
+    text-decoration: underline;
+    position: relative;
+    bottom: 20px;
+        left: 22px;
+    font-style: normal;
+    font-size: 14px;
+}
 
 .aboutPage .agent .agentInformation {
     text-align: left;
     font-style: normal;
+        border: 0;
+    margin: 0 60px;
 }
 
 .aboutPage .agent .agentInformation .agentName {
@@ -670,14 +746,14 @@ body {
 .aboutPage .agent .amazingcarousel-nav {
     margin-top: 25px;
 }
-
+.aboutPageBG {
+  background: #d7d7d7;
+  position: relative;
+  top: 122px;
+}
 .aboutPage .getTouch {
     background: #d7d7d7;
-    padding: 20px 13rem 40px 12.5rem;
-    position: relative;
-    top: 122px;
-    width: 118%;
-    left: -100px;
+    padding: 20px 3rem 40px 3rem;
 }
 
 .aboutPage .getTouch .wpforms-form {
@@ -755,14 +831,25 @@ body {
 /* start contact page */
 
 @media screen and (min-width: 48em) {
-    .entry-content .contactPage {
-        width: 80%;
-    }
-}
 
+    .page-id-10 .site-content-contain #content .wrap{
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+.site-content-contain #content #breadcrumb .wrap {
+    max-width: 1180px;
+    padding: 1px 2px;
+        margin-left: auto;
+    margin-right: auto;
+}
+}
+.entry-content .contactPageContaint{
+        padding: 0 3em;
+}
 .entry-content .pageHeading .heading, .pageHeadingTag .tagHeading {
     font-family: 'Roboto Slab', serif;
-    font-size: 34px;
+    font-size: 45px;
     color: #ecc154;
     font-weight: 900;
     text-align: center;
@@ -820,7 +907,8 @@ body {
 .entry-content .contactPage .contactMap .mapp-layout {
     position: relative;
     height: 26rem;
-    right: 20%;
+    width: 100% !important;
+    margin: 0;
 }
 
 .entry-content .contactPage .contactForm {
@@ -877,7 +965,9 @@ body {
 /* end contact page */
 
 /* start Set up consultation */
-
+.setUpConsultation{
+        padding: 0 3em;
+}
 .entry-content .setUpConsultation .pageHeading .info .email {
     margin-left: 0;
     text-align: unset;
@@ -974,7 +1064,7 @@ body {
 }
 
 .entry-content a:hover {
-    color: transparent;
+    color: #333;
     box-shadow: none;
 }
 
@@ -1137,23 +1227,319 @@ body {
 }
 
 /* end commercial property and resdential */
-
-/* start join page */
-
-#post-393 .entry-content {
-    width: 80%;
+/* start services page */
+@media screen and (min-width: 48em){
+    .page-id-64 .wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .services {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
 }
 
-.entry-content .setUpConsultation .joinFrom {
-    top: 0px;
-    margin-bottom: 0px;
+.services .servicePage{
+  border-left: 1.4px solid #ecc154;
+  margin-bottom: 3em;
+}
+.services .serviceHeading{
+    padding-top: 10em;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+.services .serviceHeading h1{
+    font-size: 2.9em;
+    color: #ecc154;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+.careers .contain{
+    padding-top: 3em;
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+    text-align: justify;
+}
+.careers .contain h2{
+ text-transform: uppercase;
+ font-family: 'Roboto Slab', serif;
+ font-weight: 500;
+ padding: 0;
+ margin-top: -10px;
+ font-size: 18px;
+ color: #363636;
+}
+.careers .contain ul{
+    list-style: none;
+    margin-left: 16px;
+    font-size: 15px;
+}
+.services .servicePage p{
+    color: #363636;    font-size: 18px;
+}
+.careers .contain ul li i{
+ color: #ecc154;
+ padding-right: 14px;
+ font-size: 14px;
 }
 
-div.wpforms-container-full .wpforms-form ul.wpforms-image-choices-modern .wpforms-image-choices-image:after {
-    background: #ecc154;
+
+/*accordion */
+.services .serviceCollapse{
+    position: relative;
+    top: 50px;
+    right: 15px;
 }
 
-/* end join page */
+.services .accordion-container {
+    position: relative;
+    width: 100%;
+    border-top: none;
+    outline: 0;
+    cursor: pointer
+}
+.services .accordion-container .content-entry{
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+.services .accordion-container .article-title {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0.625em 0.625em 0.625em 1.3em;
+    font-size: 20px;
+    color: #363636;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+}
+
+.services .accordion-container .article-title:hover,
+.services .accordion-container .article-title:active,
+.services .accordion-container .content-entry.open .article-title {
+    background-color: transparent;
+    color: #363636;
+}
+
+.services .accordion-container .article-title:hover i:before,
+.services .accordion-container .article-title:hover i:active,
+.services .accordion-container .content-entry.open i {
+    color: #363636;
+}
+
+.services .accordion-container .content-entry i {
+    position: relative;
+    font-style: normal;
+    font-size: 28px;
+    color: #363636;
+    float: right;
+    padding-left: 1em;
+    bottom: 7px;
+}
+
+.services .accordion-container .content-entry i:before {
+    content: "+ ";
+}
+
+.services .accordion-container .content-entry.open i:before {
+    content: "- ";
+}
+
+.services .accordion-content {
+    display: none;
+    padding-top: 0.3em;
+    font-size: 17px;
+    color: #767676;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: justify;
+}
+.services .accordion-content .star{
+    font-weight: 600;
+}
+
+.services .accordion-container,
+#description {
+    margin: 1.875em auto;
+}
+.servicePageForm{
+    background: #d7d7d7;
+    position: relative;
+    top: 122px;
+}
+
+#description p {
+    line-height: 1.5;
+}
+
+#description h2 {
+    text-align: center;
+}
+
+
+/* end services page */
+
+/* start CAREERS page */
+@media screen and (min-width: 48em){
+   #breadcrumb .wrap {
+    max-width: 1180px;
+    padding: 1px 2px;
+}
+.page-id-393 #content .wrap {
+    padding: 0;
+}
+.careerPage{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.aboutUsPage{
+   padding-left: 3.5em;
+   padding-right: 3em;
+}
+.page-id-9 #content .wrap{
+    padding: 0;
+}
+}
+.careerPage{
+    position: relative;
+    left: 7px;
+    bottom: 48px;
+}
+.careerPage .careers{
+  border-left: 1.4px solid #ecc154;;
+
+} 
+.careerPage .careers .joinHeading{
+    padding-top: 12rem;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+.careerPage .careers .joinHeading h1{
+    font-size: 2.9em;
+    color: #ecc154;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+.careerPage .careers .contain{
+    padding-top: 50px;
+    font-size: 16px;
+    color: #2a2a2a;
+    text-align: justify;
+}
+
+.careerPage .offer h1, .careerPage .options h1{
+    font-size: 1.9em;
+    color: #ecc154;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+.careerPage .offer, .careerPage .options{
+    position: relative;
+}
+.careerPage .offer{
+    top:3.5em;
+}
+.careerPage .options{
+    top:8.5em;
+}
+.careerPage .offer .row{
+    text-align: center;
+    position: relative;
+    top: 14px;
+}
+.careerPage .offer .row i{
+    font-size: 50px;
+    color: #ecc154;
+}
+.careerPage .offer .row p{
+    color: #2a2a2a;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.careerPage .options .row{   
+   border-radius: 10px;
+}
+.careerPage .options .row div{
+    /*background: #f8f8f8;*/
+    background: #FFF;
+    padding: 15px 0px;
+    margin: 0;
+    text-align: center;
+    color: #2a2a2a;
+    height: 370px;
+}
+.careerPage .options .row div ul{
+ background: #f8f8f8;
+ padding: 20px 0 0 0;
+ margin: 0;
+ list-style: none;
+ height: 17.5em;
+}
+.careerPage .options .row div .joinButton{
+  background: #f8f8f8;
+  padding: 0 0 17px 0;
+}
+.careerPage .options .row ul li{
+    font-weight: 500;
+    font-size: 15px;
+}
+.careerPage .options .row .option{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+.careerPage .options .row .price{
+    font-size: 50px;
+    position: relative;
+    left: 10px;
+    margin: 0;
+    font-weight: 600;
+}
+.careerPage .options .row .optionIcon{
+   font-size: 16px;
+   position: relative;
+   bottom: 25px;
+   right: 5px;
+   color: gray;
+   font-style: normal;
+   font-weight: 500;
+
+}
+.careerPage .options .row .price span{
+    font-size: 12px;
+    color: gray;
+    font-weight: 500;
+}
+.careerPage .options .row .star{
+    color: #f9593a;
+}
+.careerPage .options .row button{
+    background: transparent;
+    color: #2a2a2a;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid #ecc154;
+    font-weight: 600;
+    padding: 7px 18px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.careerFrom{
+    background: #d7d7d7;
+    position: relative;
+    top: 121px;
+}
+
+/* end CAREERS page */
 
 /* star footer */
 
@@ -1194,7 +1580,10 @@ div.wpforms-container-full .wpforms-form ul.wpforms-image-choices-modern .wpform
 .site-footer .main .footerRow .col-add:hover {
     color: #acacac;
 }
-
+.site-footer .wrap{
+    max-width: 1180px;
+    padding: 2em 2.5em 1.5em 5em;
+}
 .site-footer .wrap h1 {
     text-align: center;
     font-weight: 500;
@@ -1326,6 +1715,7 @@ div.wpforms-container-full .wpforms-form ul.wpforms-image-choices-modern .wpform
         height: 328px;
     }
     /* panel4 home map */
+
     .home .entry-content .contactMap .mapp-layout {
         width: 710px !important;
         right: 7.4em;
@@ -1339,8 +1729,6 @@ div.wpforms-container-full .wpforms-form ul.wpforms-image-choices-modern .wpform
         left: 0px;
     }
     .aboutPage .getTouch {
-        width: 140% !important;
-        left: -100px !important;
         top: 38px !important;
     }
     /* contact us  page */
@@ -1448,13 +1836,13 @@ div.wpforms-container-full .wpforms-form ul.wpforms-image-choices-modern .wpform
     .aboutPage .getTouch {
         background: #d7d7d7;
         text-align: center;
-        width: 116%;
+
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
         padding: 20px;
         margin-left: 0;
         top: 51px;
-        left: -50px;
+
     }
     .aboutPage .getTouch .wpforms-form {
         height: auto;
@@ -1507,162 +1895,318 @@ div.wpforms-container-full .wpforms-form ul.wpforms-image-choices-modern .wpform
         width: 770px !important;
         right: 10em !important;
         top: 25px !important;
-    } */
-    /* footer */
-    .widget-column.footer-widget-3 .tnp-widget-minimal input.tnp-submit {
-        width: 40%;
+        } */
+        /* footer */
+        .widget-column.footer-widget-3 .tnp-widget-minimal input.tnp-submit {
+            width: 40%;
+        }
     }
+
+    /* mobile view */
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        .home .entry-content .slider {
+            margin-top: 0px;
+        }
+        .request-button .socialMedia {
+            top: 27px;
+        }
+        #panel1 .mainProperty {
+            bottom: 0;
+            left: 0;
+        }
+        #panel1 .mainProperty .buttonProperty {
+            padding: 20px 0 0px 0px;
+        }
+        #panel1 .buttonProperty button {
+            padding: 1em 0;
+            font-size: 12px;
+            padding-right: 3px;
+        }
+        .buttonProperty span.dot {
+            height: 30px;
+            width: 30px;
+            padding: 6px;
+        }
+        #panel1 .mainProperty .title {
+            top: 30px;
+            font-size: 12px;
+        }
+        #panel1 .mainProperty .heading {
+            font-size: 1.5rem;
+        }
+        #panel1 .mainProperty .contant1, #panel1 .mainProperty .contant2 {
+            font-size: 12px;
+            width: 100%;
+        }
+        .home #panel2 .panel-content .homeVideo {
+            width: 100%;
+            height: 321px;
+            margin-top: 10px;
+            float: none;
+        }
+        .home #panel2 .panel-content .reviewSlider {
+            width: 100%;
+        }
+        .menu-toggle:hover, .menu-toggle:focus {
+            width: 100%;
+        }
+        .request-number span {
+            position: relative;
+            top: 33px;
+            left: 13px;
+        }
+        .request-number {
+            position: relative;
+            top: -8px;
+            left: 75px;
+        }
+        .request-button {
+            top: 66px;
+        }
+        .request-number h6 {
+            top: 25px;
+            right: -39px;
+        }
+        .site-branding {
+            margin-bottom: 0px !important;
+            padding: 10px 0 5px;
+        }
+        /* panel 4 map home page */
+        .home .entry-content .contactMap .mapp-layout {
+            width: 425px !important;
+            right: 3.4em !important;
+            top: -12px !important;
+            height: 438px !important;
+        }
+        /* about us */
+        .aboutPage .getTouch {
+            top: 19px;
+        }
+        .aboutPage .aboutUs .title {
+            top: 60px;
+            left: 0px;
+        }
+        /* contact page */
+        .entry-content .contactPage .pageHeading .info .email {
+            margin-left: 0;
+        }
+        .entry-content .contactPage .pageHeading .info {
+            text-align: left;
+        }
+        /* about page */
+        .aboutPage .aboutUs {
+            border: none;
+        }
+        /*setUpConsultation  */
+        .entry-content .setUpConsultation .pageHeading .info {
+            text-align: center;
+        }
+        .entry-content .setUpConsultation .setUp {
+            top: 15px;
+        }
+        /* map */
+        .contactPage .contactMap .mapp-layout {
+            width: 425px !important;
+            right: 3.4em !important;
+            top: -12px !important;
+            height: 438px !important;
+        }
+        /* footer */
+        .site-footer .wrap h1 {
+            font-size: 2em;
+            margin-right: 0;
+        }
+        .widget-column.footer-widget-3 .tnp-widget-minimal input.tnp-email {
+            border-radius: 5px 5px 0 0;
+        }
+        .widget-column.footer-widget-3 .tnp-widget-minimal input.tnp-submit {
+            width: 100% !important;
+            margin-top: 0;
+            border-radius: 0 0 5px 5px;
+        }
+        .site-footer .site-info {
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .request-number span {
+            position: relative;
+            top: -80px;
+            left: 0px;
+        }
+        .request-number {
+            position: relative;
+            left: -18px;
+            bottom: 118px;
+        }
+        .request-number h6 {
+            right: -17px;
+            top: -85px;
+        }
+        .contactPage .contactMap .mapp-layout {
+            width: 320px !important;
+            right: 3.4em !important;
+        }
+    }
+
+    /* end responsive */
+
+
+    /*new task*/
+    @CHARSET "ISO-8859-1";
+    /*start change theme color or button color*/
+
+    #ihf-main-container .btn-primary {
+      color: #333;
+      background-color: #ecc154;
+      border-color: #ecc154;
+      font-family: 'Roboto Slab', serif;
+  }
+  #ihf-main-container .btn-primary:hover,
+  #ihf-main-container .btn-primary:focus,
+  #ihf-main-container .btn-primary:active,
+  #ihf-main-container .btn-primary.active,
+  .open .dropdown-toggle#ihf-main-container .btn-primary {
+      color: #333;
+      background-color: #ecc154;
+      border-color: #ecc154;
+      font-family: 'Roboto Slab', serif;
+  }
+  #ihf-main-container .btn-primary:active,
+  #ihf-main-container .btn-primary.active,
+  .open .dropdown-toggle#ihf-main-container .btn-primary {
+      background-image: none;
+  }
+  #ihf-main-container .btn-primary.disabled,
+  #ihf-main-container .btn-primary[disabled],
+  fieldset[disabled] #ihf-main-container .btn-primary,
+  #ihf-main-container .btn-primary.disabled:hover,
+  #ihf-main-container .btn-primary[disabled]:hover,
+  fieldset[disabled] #ihf-main-container .btn-primary:hover,
+  #ihf-main-container .btn-primary.disabled:focus,
+  #ihf-main-container .btn-primary[disabled]:focus,
+  fieldset[disabled] #ihf-main-container .btn-primary:focus,
+  #ihf-main-container .btn-primary.disabled:active,
+  #ihf-main-container .btn-primary[disabled]:active,
+  fieldset[disabled] #ihf-main-container .btn-primary:active,
+  #ihf-main-container .btn-primary.disabled.active,
+  #ihf-main-container .btn-primary[disabled].active,
+  fieldset[disabled] #ihf-main-container .btn-primary.active {
+      background-color: #ecc154;
+      border-color: #ecc154;
+      font-family: 'Roboto Slab', serif;
+  }
+
+  .ihf-map-icon{
+    background: #ecc154 ;
+    border:1px solid #ecc154;
+    color: #333;
+    font-size: 12px;
+    height: 24px;
+    position: relative;
+    width: 24px;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor:pointer;
 }
 
-/* mobile view */
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .home .entry-content .slider {
-        margin-top: 0px;
-    }
-    .request-button .socialMedia {
-        top: 27px;
-    }
-    #panel1 .mainProperty {
-        bottom: 0;
-        left: 0;
-    }
-    #panel1 .mainProperty .buttonProperty {
-        padding: 20px 0 0px 0px;
-    }
-    #panel1 .buttonProperty button {
-        padding: 1em 0;
-        font-size: 12px;
-        padding-right: 3px;
-    }
-    .buttonProperty span.dot {
-        height: 30px;
-        width: 30px;
-        padding: 6px;
-    }
-    #panel1 .mainProperty .title {
-        top: 30px;
-        font-size: 12px;
-    }
-    #panel1 .mainProperty .heading {
-        font-size: 1.5rem;
-    }
-    #panel1 .mainProperty .contant1, #panel1 .mainProperty .contant2 {
-        font-size: 12px;
-        width: 100%;
-    }
-    .home #panel2 .panel-content .homeVideo {
-        width: 100%;
-        height: 321px;
-        margin-top: 10px;
-        float: none;
-    }
-    .home #panel2 .panel-content .reviewSlider {
-        width: 100%;
-    }
-    .menu-toggle:hover, .menu-toggle:focus {
-        width: 100%;
-    }
-    .request-number span {
-        position: relative;
-        top: 33px;
-        left: 13px;
-    }
-    .request-number {
-        position: relative;
-        top: -8px;
-        left: 75px;
-    }
-    .request-button {
-        top: 66px;
-    }
-    .request-number h6 {
-        top: 25px;
-        right: -39px;
-    }
-    .site-branding {
-        margin-bottom: 0px !important;
-        padding: 10px 0 5px;
-    }
-    /* panel 4 map home page */
-    .home .entry-content .contactMap .mapp-layout {
-        width: 425px !important;
-        right: 3.4em !important;
-        top: -12px !important;
-        height: 438px !important;
-    }
-    /* about us */
-    .aboutPage .getTouch {
-        top: 19px;
-        width: 118%;
-        left: -30px;
-    }
-    .aboutPage .aboutUs .title {
-        top: 60px;
-        left: 0px;
-    }
-    /* contact page */
-    .entry-content .contactPage .pageHeading .info .email {
-        margin-left: 0;
-    }
-    .entry-content .contactPage .pageHeading .info {
-        text-align: left;
-    }
-    /* about page */
-    .aboutPage .aboutUs {
-        border: none;
-    }
-    /*setUpConsultation  */
-    .entry-content .setUpConsultation .pageHeading .info {
-        text-align: center;
-    }
-    .entry-content .setUpConsultation .setUp {
-        top: 15px;
-    }
-    /* map */
-    .contactPage .contactMap .mapp-layout {
-        width: 425px !important;
-        right: 3.4em !important;
-        top: -12px !important;
-        height: 438px !important;
-    }
-    /* footer */
-    .site-footer .wrap h1 {
-        font-size: 2em;
-        margin-right: 0;
-    }
-    .widget-column.footer-widget-3 .tnp-widget-minimal input.tnp-email {
-        border-radius: 5px 5px 0 0;
-    }
-    .widget-column.footer-widget-3 .tnp-widget-minimal input.tnp-submit {
-        width: 100% !important;
-        margin-top: 0;
-        border-radius: 0 0 5px 5px;
-    }
-    .site-footer .site-info {
-        margin-left: 0;
-    }
+.ihf-map-icon:after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 5px solid transparent;
+    border-top-color: #ecc154;
+    top: 100%;
+    left: 27%;
 }
 
-@media (max-width: 360px) {
-    .request-number span {
-        position: relative;
-        top: -80px;
-        left: 0px;
-    }
-    .request-number {
-        position: relative;
-        left: -18px;
-        bottom: 118px;
-    }
-    .request-number h6 {
-        right: -17px;
-        top: -85px;
-    }
-    .contactPage .contactMap .mapp-layout {
-        width: 320px !important;
-        right: 3.4em !important;
-    }
+#ihf-main-container .title-bar-1 {
+  color: #333;
+  padding:3px 8px;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+  background-color: #ecc154;
+  border:1px solid #ecc154;
+  border-radius:3px;
+
 }
 
-/* end responsive */
+/*MarketBoost classes*/
+#ihf-main-container .ihf-market-report .ihf-stat-block .ihf-stat-block-icon {
+    color: #ecc154;
+    opacity: .6;
+}
+
+#ihf-main-container g.c3-chart-bars > .c3-chart-bar:nth-child(1) .c3-bar {
+    fill: #ecc154 !important;
+}
+
+#ihf-main-container g.c3-chart-bars > .c3-chart-bar:nth-child(2) .c3-bar {
+    fill: #ecc154 !important;
+}
+
+#ihf-main-container .arc { /*donut*/
+    stroke-weight:0.1;
+    fill: #ecc154;
+}
+
+#ihf-main-container .arc2 { /*donut*/
+    stroke-weight:0.1;
+    fill: #ecc154;
+}
+
+#ihf-main-container .c3-tooltip-name-activeListings td.name span, #ihf-main-container .c3-tooltip-name-activeMedianPrice td.name span,
+#ihf-main-container .c3-tooltip-name-medianDaysInIhf td.name span, #ihf-main-container .c3-tooltip-name-saleToListPercent td.name span {
+    background-color:#ecc154 !important;
+}
+
+#ihf-main-container .c3-tooltip-name-soldListings td.name span, #ihf-main-container .c3-tooltip-name-soldMedianPrice td.name span {
+    background-color:#ecc154 !important;
+}
+#ihf-main-container .input-group-addon{
+  color: #333;
+  background-color: #ecc154;
+  border-color: #ecc154;
+}
+#ihf-main-container .mc-lineitem, #ihf-main-container a,#ihf-main-container a:hover{
+  color: #ecc154;
+}
+#ihf-main-container .pagination{
+    margin: 0px;
+}
+.map-container .gs-tab.active{
+    background-color: #ecc154;
+}
+.map-container .gs-tab.inactive {
+    background-color: #ecc154;
+}
+#ihf-main-container .btn{
+    background-color: #ecc154;
+    color: #333;
+    font-family: 'Roboto Slab', serif;
+}
+.pull-right.ihf-social-share a {
+    background-color: #ecc154;
+}
+.pull-right.ihf-social-share .fa-facebook, .ihf-share-btn-pinterest .fa-pinterest, .ihf-share-btn-twitter .fa-twitter, .ihf-share-btn-google-plus .fa-google-plus {
+ font-family: "Font Awesome 5 Brands";
+ font-weight: unset;
+}
+#ihf-main-container .btn-link:focus, #ihf-main-container .btn-link:hover {
+    color: #333;
+    background-color: #ecc154;
+    font-family: 'Roboto Slab', serif;
+}
+.ihf-powered-by{
+    display:none;
+}
+
+
+
+
+
+
