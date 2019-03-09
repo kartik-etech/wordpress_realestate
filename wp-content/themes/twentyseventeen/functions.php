@@ -617,19 +617,20 @@ function etech_wp_resources()
 {
     // add bootstrap
     wp_enqueue_style('bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
-    wp_enqueue_script('bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js');
+    // wp_enqueue_script('bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js');
     // custom
     wp_enqueue_style('my-theme-style', get_stylesheet_uri());
     wp_enqueue_style('normalize', get_template_directory_uri() . '/css/style.css', array(), filemtime(get_stylesheet_directory() . '/css/style.css'));
-    wp_enqueue_style('wpb-fa', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+    wp_enqueue_style('wpb-fab', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css');
     wp_enqueue_script('my-theme-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array(), filemtime(get_stylesheet_directory() . '/js/scripts.js'));
+    
 
 }
 
 add_action('wp_enqueue_scripts', 'etech_wp_resources');
 function get_breadcrumb()
 {
-    echo '<a href="' . home_url() . '" rel="nofollow">Home</a>';
+    echo '<li class="breadcrumb-item"><a href="' . home_url() . '" rel="nofollow">Home</a></li>';
     if (is_category() || is_single()) {
         // echo " &nbsp;>&nbsp; ";
         the_category(' . ');

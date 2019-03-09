@@ -55,4 +55,9 @@
 
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
-		<div class="breadcrumb"><?php get_breadcrumb(); ?></div>
+		<!-- <nav aria-label="breadcrumb"><ol class="breadcrumb"><?php get_breadcrumb(); ?> </ol></nav> -->
+		<div class="navigation-top" id="breadcrumb">
+				<div class="wrap">
+				<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentyseventeen' ); ?>"><ul class="breadcrumb"><?php get_breadcrumb(); ?> </ul></nav>
+				</div><!-- .wrap -->
+		</div><!-- .navigation-top -->
